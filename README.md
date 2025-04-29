@@ -6,7 +6,7 @@
 
 ## 📄 Overview
 
-This repository provides a **ready-to-use notebook** that demonstrates how to extract **structured ESG-related data** from documents using **OpenAI**, fully integrated into the **Microsoft Fabric** ecosystem.
+This repository provides resources that demonstrate how to extract **structured ESG-related data** from documents using **OpenAI**, fully integrated into the **Microsoft Fabric** ecosystem.
 
 🔗 **Related Work:**  
 This solution is closely related to and complements [UtilityInsights](https://github.com/WeaveAnalytics/UtilityInsights/tree/main).
