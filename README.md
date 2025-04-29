@@ -72,7 +72,7 @@ Extract and structure chemical safety data to support safe handling, emergency r
 
 ## 🔮 Extensibility Ideas
 
-- Adapt invoice and/or document storage locations present in Blob storage, Emails, Lakehouse, and other storage locations. 
+- Adapt invoice and/or document storage locations present in Blob storage, SharePoint doc libraries, Emails, Lakehouse, and other storage locations. 
 - Adapt workflows for other document types (e.g., safety data sheets, transport logs).
 - Automate extractions via Data Factory pipelines.
 - Create workflows with Power Automate:
