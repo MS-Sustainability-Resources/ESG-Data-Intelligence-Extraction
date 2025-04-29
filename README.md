@@ -13,15 +13,6 @@ This solution is closely related to and complements [UtilityInsights](https://gi
 
 ---
 
-## ⚡ Scope of This Repository
-
-> **Focus:**  
-> This notebook demonstrates the **data extraction** step only.  
-> It does **NOT** implement a full end-to-end pipeline.  
-> Customers and partners are encouraged to **extend** this foundational work to fit their specific use cases and downstream workflows.
-
----
-
 ## ✨ Benefits
 
 - **Simplified Extraction Process:**  
@@ -38,41 +29,19 @@ This solution is closely related to and complements [UtilityInsights](https://gi
 
 ---
 
-## 🧽 Notebook Workflow
-
-1. **Setup & Configuration**  
-   Load dependencies, Fabric utilities, and API keys.
-
-2. **Helper Functions**  
-   Utilities for retrieving secrets, extracting text, and interacting with OpenAI.
-
-3. **Data Ingestion**  
-   Read documents (PDFs, images, text files) from Fabric Data Lake.
-
-4. **AI-Powered Data Extraction**  
-   Extract structured JSON data from document content using OpenAI.
-
-5. **Output & Next Steps**  
-   Transform extracted data into DataFrames for analysis, reporting, or integration into ESG management tools.
-
----
-
 ## 🏗️ Architecture Illustration
 
-> *![image](https://github.com/user-attachments/assets/4bd6f7ae-f15d-4bb9-9cc7-42aac0b5f52b)
-*
+> *![image](https://github.com/user-attachments/assets/4bd6f7ae-f15d-4bb9-9cc7-42aac0b5f52b)*
 
 ---
 
-## 🚀 Getting Started
+## 🚀 What gets deployed?
 
-1. Clone this [cross-linked repository](https://github.com/WeaveAnalytics/UtilityInsights/tree/main) into your Microsoft Fabric workspace.
-2. Deploy a GPT-4 model in AI Foundry and obtain the API Key and Endpoint URL.
-3. Define your extraction schema based on the ESG data you want to extract.
-4. Configure the notebook with your API Key, endpoint, and schema.
-5. Update secrets and file paths to match your environment.
-6. Run the notebook end-to-end or integrate it into your existing data workflows.
-7. Customize prompts or post-processing steps as needed to meet your extraction goals.
+- Azure OpenAI service
+- Azure KeyVault to store secrets
+- Azure Fabric Capacity to use in the process
+- A new Entra ID App Registration that creates the right Fabric items
+- A new Fabric Workspace with the items (Lakehouse and Notebook) required to test UtilityInsights
 
 ---
 
@@ -96,10 +65,14 @@ This solution is closely related to and complements [UtilityInsights](https://gi
 - **Integration with ESG Management Tools:**  
   Feed extracted data into ESG solutions like Microsoft Sustainability Manager for tracking and reporting.
 
+- **Safety data Extraction:**  
+Extract and structure chemical safety data to support safe handling, emergency response, and process optimization in manufacturing.
+
 ---
 
 ## 🔮 Extensibility Ideas
 
+- Adapt invoice and/or document storage locations present in Blob storage, Emails, Lakehouse, and other storage locations. 
 - Adapt workflows for other document types (e.g., safety data sheets, transport logs).
 - Automate extractions via Data Factory pipelines.
 - Create workflows with Power Automate:
